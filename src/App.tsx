@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from "./Todolist";
 import {v1} from "uuid";
@@ -16,7 +16,7 @@ export type ToDoListType = {
     filter: TitleType
 }
 
-type TaskStateType = {
+ export type TaskStateType = {
     [key: string]: Array<TaskType>
 }
 
@@ -129,7 +129,6 @@ function App() {
                         removeTodoList={removeTodoList}
                         changeTaskTitle={changeTaskTitle}
                         changeTodoListTitle={changeTodoListTitle}
-
                     />
                 </Paper>
             </Grid>
