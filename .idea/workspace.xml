@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae30c19a-7356-4f9a-8662-dd86e8cefc19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/task-reducer.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/task-reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/todolists-tasks-reducer.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/todoList-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/todoList-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App2.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/task-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/task-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/todoList-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todoList-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/todoList-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todoList-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/todolists-tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../IT/project-social-network/my-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,20 +60,34 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PROJECT\TODOLIST\my-app\src" />
       <recent name="E:\PROJECT\TODOLIST\my-app\src\store" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.property with todolistId should be deleted">
-    <configuration name="ids should be equals" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="correct filter of todolist should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/todolists-tasks-reducer.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/state/todoList-reducer.test.tsx" />
       <test-names>
-        <test-name value="ids should be equals" />
+        <test-name value="correct filter of todolist should be changed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="correct todolist should change its name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/todoList-reducer.test.tsx" />
+      <test-names>
+        <test-name value="correct todolist should change its name" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -70,7 +98,7 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/task-reducer.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/state/task-reducer.test.tsx" />
       <test-names>
         <test-name value="new array should be added when new todolist is added" />
       </test-names>
@@ -83,7 +111,7 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/task-reducer.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/state/task-reducer.test.tsx" />
       <test-names>
         <test-name value="property with todolistId should be deleted" />
       </test-names>
@@ -96,32 +124,19 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/task-reducer.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/state/task-reducer.test.tsx" />
       <test-names>
         <test-name value="status of specified task should be changed" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="title of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/task-reducer.test.tsx" />
-      <test-names>
-        <test-name value="title of specified task should be changed" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.property with todolistId should be deleted" />
-        <item itemvalue="Jest.ids should be equals" />
         <item itemvalue="Jest.new array should be added when new todolist is added" />
-        <item itemvalue="Jest.title of specified task should be changed" />
         <item itemvalue="Jest.status of specified task should be changed" />
+        <item itemvalue="Jest.correct filter of todolist should be changed" />
+        <item itemvalue="Jest.correct todolist should change its name" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +153,11 @@
       <workItem from="1626545701197" duration="721000" />
       <workItem from="1626606591397" duration="616000" />
       <workItem from="1626877460665" duration="16347000" />
+      <workItem from="1626903971258" duration="734000" />
+      <workItem from="1626975140320" duration="9903000" />
+      <workItem from="1627163429252" duration="815000" />
+      <workItem from="1627206035293" duration="21000" />
+      <workItem from="1627292693246" duration="7193000" />
     </task>
     <servers />
   </component>
@@ -154,5 +174,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,15 +1,14 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
-import {TitleType} from "./App";
 import AddItemForm from "./AddItemForm";
 import {EditableSpan} from "./EditableSpan";
 import {Button, IconButton, Checkbox} from '@material-ui/core';
 import {Delete} from '@material-ui/icons';
+import { TitleType } from './AppWithRedux';
 
 export type TaskType = {
     title: string
     isDone: boolean
     id: string
-
 
 }
 type PropsType = {
