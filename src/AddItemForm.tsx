@@ -1,5 +1,5 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
-import { IconButton, TextField } from '@material-ui/core'
+import {IconButton, TextField} from '@material-ui/core'
 import {AddBox} from '@material-ui/icons';
 
 
@@ -8,26 +8,29 @@ type AddItemFormPropsType = {
 }
 
 
-function AddItemForm(props: AddItemFormPropsType) {
-
+export const  AddItemForm = React.memo( (props: AddItemFormPropsType)=> {
+    console.log('AddItemForm')
     const [title, setTitle] = useState('')
-    const [error, setError] = useState<boolean>(false)
+    const [error, setError] = useState<null | string>(null)
     const errorMessage = 'Title is required'
 
-    const addItem = ()=> {
+    const addItem = () => {
         const titleTrim = title.trim()
-        if(titleTrim){
+        if (titleTrim) {
             props.addItem(titleTrim)
-        } else{
-            setError(true)
+        } else {
+            setError(errorMessage)
         }
         setTitle('')
     }
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+
         setTitle(e.currentTarget.value)
     }
     const onPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        setError(false)
+        if(error !== null){
+            setError(null)
+        }
         if (e.key === 'Enter') {
             addItem()
         }
@@ -62,9 +65,8 @@ function AddItemForm(props: AddItemFormPropsType) {
                 <AddBox fontSize={'large'}/>
             </IconButton>
             {/*<button className={'btnState'} onClick={addItem}>Click</button>*/}
-            <div style={error ? {color: 'red'} : {display: 'none'} }>{errorMessage}</div>
+            <div style={error ? {color: 'red'} : {display: 'none'}}>{errorMessage}</div>
         </div>
     )
-}
+})
 
-export default AddItemForm

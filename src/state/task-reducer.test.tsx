@@ -4,12 +4,11 @@ import {
     AddTodolistAC,
     changeTaskStatusAC,
     RemoveTodolistAC,
-    taskReducer
+    taskReducer, TasksStateType
 } from './task-reducer'
 import {RemoveTaskAC} from "./task-reducer";
-import {TaskStateType} from "../AppWithReducers";
 
-let startState : TaskStateType
+let startState : TasksStateType
 
 beforeEach(()=> {
     startState = {
@@ -71,7 +70,6 @@ test('title of specified task should be changed', () => {
 
 
     const action = AddTaskTitleAC("2", 'bread', "todolistId2");
-
     const endState = taskReducer(startState, action)
 
     expect(endState["todolistId1"][1].title).toBe('JS');

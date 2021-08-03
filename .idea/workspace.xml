@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ae30c19a-7356-4f9a-8662-dd86e8cefc19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App2.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/task-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/task-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/todoList-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todoList-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/todoList-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todoList-reducer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/todolists-tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/task-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todoList-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todoList-reducer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/@types/react-redux/index.d.ts" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1vMs35Px0pY9LQhDJiOqEvtSZL8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,11 +61,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="E:\PROJECT\TODOLIST\my-app\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="F:\PROJECT\TODOLIST\my-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PROJECT\TODOLIST\my-app\src" />
       <recent name="E:\PROJECT\TODOLIST\my-app\src" />
       <recent name="E:\PROJECT\TODOLIST\my-app\src\store" />
     </key>
@@ -132,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.status of specified task should be changed" />
         <item itemvalue="Jest.property with todolistId should be deleted" />
         <item itemvalue="Jest.new array should be added when new todolist is added" />
-        <item itemvalue="Jest.status of specified task should be changed" />
-        <item itemvalue="Jest.correct filter of todolist should be changed" />
         <item itemvalue="Jest.correct todolist should change its name" />
+        <item itemvalue="Jest.correct filter of todolist should be changed" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +164,18 @@
       <workItem from="1626975140320" duration="9903000" />
       <workItem from="1627163429252" duration="815000" />
       <workItem from="1627206035293" duration="21000" />
-      <workItem from="1627292693246" duration="7193000" />
+      <workItem from="1627292693246" duration="26414000" />
+      <workItem from="1627497091641" duration="383000" />
+      <workItem from="1627498320887" duration="117000" />
+      <workItem from="1627655781715" duration="287000" />
+      <workItem from="1627679589569" duration="1205000" />
+      <workItem from="1627752656433" duration="652000" />
+      <workItem from="1627797951704" duration="3938000" />
+      <workItem from="1627807711605" duration="1366000" />
+      <workItem from="1627827742478" duration="24000" />
+      <workItem from="1627827782470" duration="50000" />
+      <workItem from="1627827851525" duration="4152000" />
+      <workItem from="1627982203254" duration="4640000" />
     </task>
     <servers />
   </component>
