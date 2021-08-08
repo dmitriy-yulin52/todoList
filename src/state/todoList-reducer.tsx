@@ -71,7 +71,6 @@ export const todoListReducer = (todoLists: Array<ToDoListType> = initialState, a
         default:
             return todoLists
     }
-
 }
 
 export const removeTodoListAC = (todoListId: string): RemoveTodoListAT => {

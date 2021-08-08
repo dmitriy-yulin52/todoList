@@ -24,7 +24,6 @@ export const  AddItemForm = React.memo( (props: AddItemFormPropsType)=> {
         setTitle('')
     }
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-
         setTitle(e.currentTarget.value)
     }
     const onPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -47,16 +46,6 @@ export const  AddItemForm = React.memo( (props: AddItemFormPropsType)=> {
                 size={'small'}
                 style={{color: 'white'}}
             />
-            {/*<input className={error ? 'error' : ''}*/}
-            {/*       value={title}*/}
-            {/*       onChange={onChangeHandler}*/}
-            {/*       onKeyPress={onPressHandler}*/}
-            {/*       style={error ? {*/}
-            {/*           border: '2px solid red',*/}
-            {/*           outline: 'none',*/}
-            {/*           textAlign: 'center'*/}
-            {/*       } : {} }*/}
-            {/*/>*/}
             <IconButton
                 onClick={addItem}
                 size={'small'}
@@ -64,7 +53,6 @@ export const  AddItemForm = React.memo( (props: AddItemFormPropsType)=> {
             >
                 <AddBox fontSize={'large'}/>
             </IconButton>
-            {/*<button className={'btnState'} onClick={addItem}>Click</button>*/}
             <div style={error ? {color: 'red'} : {display: 'none'}}>{errorMessage}</div>
         </div>
     )

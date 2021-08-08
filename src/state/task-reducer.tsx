@@ -68,14 +68,17 @@ export const taskReducer = (state: TasksStateType = initialState, action: ACType
             // return {...state, [action.todoListId]: [newTask,...state[action.todoListId]]}
         }
         case ACTION_TYPE.CHANGE_TASK_STATUS: {
-            const copyState = {...state}
-            copyState[action.todoListId] = copyState[action.todoListId].map((task) => {
-                if (task.id === action.taskId) {
-                    return {...task, isDone: action.isDone}
-                }
-                return task
-            })
-            return copyState
+            // const copyState = {...state}
+            // copyState[action.todoListId] = copyState[action.todoListId].map((task) => {
+            //     if (task.id === action.taskId) {
+            //         return {...task, isDone: action.isDone}
+            //     }
+            //     return task
+            // })
+            // return copyState
+            const copyTask = state[action.todoListId]
+            state[action.todoListId] = copyTask.map(el=>el.id === action.taskId ? {...el,isDone:action.isDone}:el)
+            return {...state}
         }
         case ACTION_TYPE.ADD_TITLE_TASK: {
             const copyState = {...state}

@@ -27,19 +27,19 @@ export const AppWithRedux = React.memo(()=> {
     const changeTodoListFilter = useCallback((title: TitleType, todoListId: string)=> {
         let action = changeTodoListFilterAC(title,todoListId)
         dispatch(action)
-    },[])
+    },[dispatch])
     const removeTodoList = useCallback((todoListId: string)=> {
         let action = removeTodoListAC(todoListId)
         dispatch(action)
-    },[])
+    },[dispatch])
     const addTodolist = useCallback((title: string)=> {
         let action = addTodoListAC(title)
         dispatch(action)
-    },[])
+    },[dispatch])
     const changeTodoListTitle = useCallback((title: string, todoListId: string)=> {
         let action = changeTodoListTitleAC(title,todoListId)
         dispatch(action)
-    },[])
+    },[dispatch])
 
 
 
@@ -77,7 +77,8 @@ export const AppWithRedux = React.memo(()=> {
                     <Button
                         color="inherit"
                         variant={'outlined'}
-                    >Login</Button>
+                    >
+                        Login</Button>
                 </Toolbar>
             </AppBar>
             <Container fixed>
