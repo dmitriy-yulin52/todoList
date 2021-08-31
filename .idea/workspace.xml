@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae30c19a-7356-4f9a-8662-dd86e8cefc19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/todoList-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todoList-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todoList-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +176,7 @@
       <workItem from="1628784435931" duration="6415000" />
       <workItem from="1629488332117" duration="60000" />
       <workItem from="1629572395891" duration="218000" />
-      <workItem from="1630404329739" duration="938000" />
+      <workItem from="1630404329739" duration="1893000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect} from 'react'
+import React, {useCallback, useEffect, useState} from 'react'
 import {EditableSpan} from "./EditableSpan";
 import {Button, IconButton} from '@material-ui/core';
 import {Delete} from '@material-ui/icons';
@@ -29,10 +29,35 @@ type TodoListPropsType = {
 
 export const Todolist = React.memo((props: TodoListPropsType) => {
 
+    const [state, setState] = useState<any>(null)
 
-    useEffect(()=> {
+    useEffect(() => {
+        TodoListApi.getTodoList()
+            .then((res) => {
+                setState(res.data)
+            }).catch((err) => console.log(err))
+    }, [])
 
-    },[])
+    useEffect(() => {
+        TodoListApi.createTodoList()
+            .then((res) => {
+                setState(res.data)
+            }).catch((err) => console.log(err))
+    }, [])
+
+    useEffect(() => {
+        TodoListApi.deleteTodoList()
+            .then((res) => {
+                setState(res.data)
+            }).catch((err) => console.log(err))
+    }, [])
+
+    useEffect(() => {
+        TodoListApi.updateTodoList()
+            .then((res) => {
+                setState(res.data)
+            }).catch((err) => console.log(err))
+    }, [])
 
     const onAllClickHandler = useCallback(() => {
         props.changeTodoListFilter('All', props.todoListId)
