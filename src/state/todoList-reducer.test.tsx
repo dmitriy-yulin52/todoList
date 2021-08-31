@@ -3,7 +3,7 @@ import {
     addTodoListAC, changeTodoListFilterAC,
     ChangeTodoListFilterAT, changeTodoListTitleAC,
     ChangeTodoListTitleAT,
-    removeTodoListAC,
+    removeTodoListAC, TODOLIST_ACTION_TYPE,
     todoListReducer, ToDoListType
 } from "./todoList-reducer";
 import {TitleType} from "../AppWithRedux";
@@ -46,7 +46,7 @@ test('correct todolist should change its name', () => {
 
 
     const action: ChangeTodoListTitleAT = {
-        type: 'CHANGE-TODOLIST-TITLE',
+        type: TODOLIST_ACTION_TYPE.CHANGE_TODOLIST_TITLE,
         todoListId: todolistId2,
         title: newTodolistTitle
     };
@@ -62,7 +62,7 @@ test('correct filter of todolist should be changed', () => {
     let newFilter: TitleType = "Completed";
 
     const action: ChangeTodoListFilterAT = {
-        type: 'CHANGE-TODOLIST-FILTER',
+        type: TODOLIST_ACTION_TYPE.CHANGE_TODOLIST_FILTER,
         todoListId: todolistId2,
         title: newFilter
     };
